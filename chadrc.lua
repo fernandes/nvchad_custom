@@ -15,26 +15,32 @@ M.options, M.ui, M.mappings, M.plugins = {}, {}, {}, {}
 --    relativenumber = true,
 -- }
 
+M.mappings = require "custom.mappings"
+
 M.ui = {
-  hl_override = "custom.highlights"
+  hl_override = require "custom.highlights.override",
+  hl_add = require "custom.highlights.add",
+  theme = "fernandes"
 }
 
 -- NvChad included plugin options & overrides
 M.plugins = {
-   status = {
-     cheatsheet = true,
-     colorizer = true
-   },
-   -- To change the Packer `config` of a plugin that comes with NvChad,
-   -- add a table entry below matching the plugin github name
-   --              '-' -> '_', remove any '.lua', '.nvim' extensions
-   -- this string will be called in a `require`
-   --              use "(custom.configs).my_func()" to call a function
-   --              use "custom.blankline" to call a file
-   default_plugin_config_replace = {
-     nvim_web_devicons = "custom.plugins.icons",
-     bufferline = "custom.plugins.bufferline",
-   },
+  user = require "custom.plugins",
+  status = {
+    cheatsheet = true,
+    colorizer = true
+  },
+  override = {
+    ["kyazdani42/nvim-tree.lua"] = {
+      renderer = {
+        icons = {
+          show = {
+            folder = false,
+          }
+        }
+      }
+    }
+  }
 }
 
 return M
