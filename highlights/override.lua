@@ -18,7 +18,7 @@ return   {
   St_InsertMode = { bg = theme.mb, },
   St_InsertModeSep = { fg = theme.mb, },
   Visual = { bg = theme.bla4, },
-  Search = { bg = theme.rb, },
+  Search = { bg = theme.y, },
   DevIconrb = { fg = theme.r },
   TSField = { fg = theme.bb },
   NvimTreeNormal = { bg = theme.bla0, },
