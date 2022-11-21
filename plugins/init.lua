@@ -39,6 +39,11 @@ return {
       }
     end
   },
-  ["tpope/vim-rails"] = {}
+  ["tpope/vim-rails"] = {},
+  ["dinhhuy258/git.nvim"] = {
+    config = function()
+      require "custom.plugins.git"
+    end,
+  }
 }
 
