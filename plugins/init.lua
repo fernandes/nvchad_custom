@@ -7,7 +7,11 @@ return {
   },
   ["vim-crystal/vim-crystal"] = {},
   -- ["mg979/vim-visual-multi"] = {},
-  ["christoomey/vim-tmux-navigator"] = {},
+  ["christoomey/vim-tmux-navigator"] = {
+    config = function()
+      require "custom.plugins.tmux-navigator"
+    end,
+  },
   ["folke/zen-mode.nvim"] = {
     config = function()
       require("zen-mode").setup {
@@ -44,6 +48,7 @@ return {
     config = function()
       require "custom.plugins.git"
     end,
-  }
+  },
+  ["jez/vim-sorbet"] = {},
 }
 

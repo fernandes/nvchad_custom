@@ -23,6 +23,15 @@ M.lsp = {
   }
 }
 
+M.tmux_navigator = {
+  n = {
+    ["<C-h>"] = { "<Cmd>TmuxNavigateLeft<CR>", "TmuxNavigateLeft" },
+    ["<C-j>"] = { "<Cmd>TmuxNavigateUp<CR>", "TmuxNavigateUp" },
+    ["<C-k>"] = { "<Cmd>TmuxNavigateDown<CR>", "TmuxNavigateDown" },
+    ["<C-l>"] = { "<Cmd>TmuxNavigateRight<CR>", "TmuxNavigateLeft" },
+  }
+}
+
 M.edit = {
   -- map("n", "<C-j>", ":m .+1<CR>==", opt)
   -- map("n", "<C-k>", ":m .-2<CR>==", opt)
