@@ -26,8 +26,8 @@ M.lsp = {
 M.tmux_navigator = {
   n = {
     ["<C-h>"] = { "<Cmd>TmuxNavigateLeft<CR>", "TmuxNavigateLeft" },
-    ["<C-j>"] = { "<Cmd>TmuxNavigateUp<CR>", "TmuxNavigateUp" },
-    ["<C-k>"] = { "<Cmd>TmuxNavigateDown<CR>", "TmuxNavigateDown" },
+    ["<C-k>"] = { "<Cmd>TmuxNavigateUp<CR>", "TmuxNavigateUp" },
+    ["<C-j>"] = { "<Cmd>TmuxNavigateDown<CR>", "TmuxNavigateDown" },
     ["<C-l>"] = { "<Cmd>TmuxNavigateRight<CR>", "TmuxNavigateLeft" },
   }
 }
