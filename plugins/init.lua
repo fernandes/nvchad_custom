@@ -43,7 +43,9 @@ return {
       }
     end
   },
+  ["vim-ruby/vim-ruby"] = {},
   ["tpope/vim-rails"] = {},
+  ["tpope/vim-bundler"] = {},
   ["dinhhuy258/git.nvim"] = {
     config = function()
       require "custom.plugins.git"
