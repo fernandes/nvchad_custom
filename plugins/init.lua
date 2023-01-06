@@ -50,5 +50,16 @@ return {
     end,
   },
   ["jez/vim-sorbet"] = {},
+  ["epwalsh/obsidian.nvim"] = {
+    config = function()
+      require("obsidian").setup({
+        dir = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Second Brain",
+        notes_subdir = "ram",
+        daily_notes = {
+          folder = "timeline",
+        }
+      })
+    end,
+  },
 }
 

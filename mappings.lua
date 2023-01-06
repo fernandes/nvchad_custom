@@ -47,6 +47,23 @@ M.edit = {
   }
 }
 
+M.obsidian = {
+  n = {
+    ["gf"] =  {
+      function()
+
+        if require('obsidian').util.cursor_on_markdown_link() then
+          return "<cmd>ObsidianFollowLink<CR>"
+        else
+          return "gf"
+        end
+      end,
+      "Obsidian go to file",
+      opts = { noremap = false, expr = true}
+    }
+  }
+}
+
 return M
 
 
