@@ -50,14 +50,14 @@ M.mason = {
     "typescript-language-server",
     "deno",
     "prettier",
-    "tailwindcss",
+    "tailwindcss-language-server",
 
     -- c/cpp stuff
     "clangd",
     "clang-format",
 
     -- ruby stuff
-    "ruby_ls",
+    "ruby-lsp",
     "solargraph",
     "sorbet",
     "standardrb",
@@ -66,7 +66,8 @@ M.mason = {
     "crystalline",
 
     -- bash
-    "bashls"
+    "bash-language-server",
+    "bash-debug-adapter"
   },
 }
 
