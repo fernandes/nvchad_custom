@@ -50,7 +50,7 @@ return {
 
   {
     "vim-crystal/vim-crystal",
-    {},
+    event = "BufEnter *.cr"
   },
   -- ["mg979/vim-visual-multi"] = {},
   {
@@ -96,15 +96,15 @@ return {
   },
   {
     "vim-ruby/vim-ruby",
-    {},
+    lazy = false,
   },
   {
     "tpope/vim-rails",
-    {},
+    lazy = false,
   },
   {
     "tpope/vim-bundler",
-    {},
+    lazy = false,
   },
   {
     "dinhhuy258/git.nvim",
@@ -115,7 +115,7 @@ return {
   },
   {
     "jez/vim-sorbet",
-    {},
+    event = "BufEnter *.rb",
   },
 }
 
