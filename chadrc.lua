@@ -18,29 +18,33 @@ M.options, M.ui, M.mappings, M.plugins = {}, {}, {}, {}
 M.mappings = require "custom.mappings"
 
 M.ui = {
-  hl_override = require "custom.highlights.override",
-  hl_add = require "custom.highlights.add",
-  theme = "fernandes"
+ hl_override = require "custom.highlights.override",
+ hl_add = require "custom.highlights.add",
+ theme = "fernandes"
+  -- theme = "onedark"
 }
 
 -- NvChad included plugin options & overrides
-M.plugins = {
-  user = require "custom.plugins",
-  status = {
-    cheatsheet = true,
-    colorizer = true
-  },
-  override = {
-    ["kyazdani42/nvim-tree.lua"] = {
-      renderer = {
-        icons = {
-          show = {
-            folder = false,
-          }
-        }
-      }
-    }
-  }
-}
+M.plugins = "custom.plugins"
+
+-- M.plugins = {
+--   user = require "custom.plugins",
+--   status = {
+--     cheatsheet = true,
+--     colorizer = true
+--   },
+--   override = {
+--     ["kyazdani42/nvim-tree.lua"] = {
+--       renderer = {
+--         icons = {
+--           show = {
+--             folder = false,
+--           }
+--         }
+--       }
+--     }
+--   }
+-- }
+--
 
 return M

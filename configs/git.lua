@@ -27,3 +27,5 @@ require('git').setup({
   target_branch = "master",
 })
 
+
+return {}
