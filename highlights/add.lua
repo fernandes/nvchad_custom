@@ -1,6 +1,6 @@
 local theme = require("custom.highlights.colors")
 
-return   {
+local colors = {
   -- YAML
   yamlTSPunctDelimiter = { fg = theme.whi3, },
   yamlTSField = { fg = theme.bb },
@@ -9,7 +9,6 @@ return   {
   javascriptTSProperty = { fg = theme.whi2 },
   crystalAttribute = { fg = theme.m },
   crystalLocalVariableOrMethod = { fg = theme.whi3 },
-  crystalArrayDelimiter = { fg = theme.red },
   crystalArrayDelimiter = { fg = theme.yb },
   crystalSymbol = { fg = theme.rb },
   crystalArrayLiteral = { fg = theme.whi3 },
@@ -23,3 +22,7 @@ return   {
   eRubyBlock = { fg = theme.whi2, },
   rubyKeywordAsMethod = { fg = theme.m, },
 }
+
+colors['@tag.delimiter.html'] = { fg = theme.whi3 }
+
+return colors
