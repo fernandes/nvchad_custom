@@ -44,9 +44,7 @@ require'lspconfig'.standardrb.setup {
 require'lspconfig'.solargraph.setup {
   on_attach = my_on_attach,
   cmd = {
-    -- "bundle",
-    -- "exec",
-    "solargraph",
+    "/opt/rbenv/shims/solargraph",
     "stdio",
   },
   settings = {
