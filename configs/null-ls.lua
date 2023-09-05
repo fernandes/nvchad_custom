@@ -8,7 +8,6 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 local sources = {
 
   -- webdev stuff
-  b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
   b.formatting.prettierd.with {
     filetypes = {
       "html",
