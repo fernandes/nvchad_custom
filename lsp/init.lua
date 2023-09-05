@@ -7,6 +7,7 @@ local lspconfig = require "lspconfig"
 
 require "custom.lsp.ruby"
 require "custom.lsp.crystal"
+require "custom.lsp.markdown"
 
 -- Crystal Setup
 lspconfig.crystalline.setup {
