@@ -48,6 +48,21 @@ M.edit = {
   }
 }
 
+M.tabs = {
+  n = {
+    ["<leader>]"] = { ":tabnext<CR>", "Tab: Next" },
+    ["<leader>["] = { ":tabprevious<CR>", "Tab: Previous" },
+    ["<leader>tn"] = { ":tabnew<CR>", "Tab: New" },
+    ["<leader>tx"] = { ":tabclose<CR>", "Tab: Close" },
+    ["<leader>t1"] = { ":tabn 1<CR>", "Tab: Go To 1" },
+    ["<leader>t2"] = { ":tabn 2<CR>", "Tab: Go To 2" },
+    ["<leader>t3"] = { ":tabn 3<CR>", "Tab: Go To 3" },
+    ["<leader>t4"] = { ":tabn 4<CR>", "Tab: Go To 4" },
+    ["<leader>t5"] = { ":tabn 5<CR>", "Tab: Go To 5" },
+    ["<leader>t6"] = { ":tabn 6<CR>", "Tab: Go To 6" },
+  }
+}
+
 -- M.obsidian = {
 --   n = {
 --     ["gf"] =  {
