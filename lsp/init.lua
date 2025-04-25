@@ -10,10 +10,10 @@ require "custom.lsp.crystal"
 require "custom.lsp.markdown"
 
 -- Crystal Setup
-lspconfig.crystalline.setup {
-  on_attach = on_attach,
-  capabilities = capabilities,
-}
+-- lspconfig.crystalline.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+-- }
 
 -- vim.cmd [[autocmd BufWritePre <buffer> lua vim.lsp.buf.format()]]
 -- or vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]

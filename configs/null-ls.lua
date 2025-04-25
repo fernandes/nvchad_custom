@@ -10,7 +10,7 @@ local sources = {
   -- webdev stuff
   b.formatting.prettierd.with {
     filetypes = {
-      "html",
+      -- "html",
       "markdown",
       "css",
     },
@@ -19,7 +19,9 @@ local sources = {
   -- Lua
   -- b.formatting.stylua,
   b.formatting.lua_format,
-  b.formatting.erb_lint,
+  -- b.formatting.erb_lint,
+  -- b.formatting.htmlbeautifier,
+  b.formatting.erb_format,
 
   b.diagnostics.reek,
 }
